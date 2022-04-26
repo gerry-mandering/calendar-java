@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a697b449-4e5d-41d2-9b1a-2ad33ae5b3be" name="Changes" comment="Feat: 덧셈기 추가">
+    <list default="true" id="a697b449-4e5d-41d2-9b1a-2ad33ae5b3be" name="Changes" comment="Feat: 반복입력 기능 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gerrymandering/calender/Calender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gerrymandering/calender/Calender.java" afterDir="false" />
     </list>
@@ -71,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650950230665</updated>
       <workItem from="1650950232011" duration="1775000" />
-      <workItem from="1650952018321" duration="1968000" />
+      <workItem from="1650952018321" duration="2951000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: 캘린터 기본 틀 제작">
       <created>1650950611384</created>
@@ -94,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650952076436</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Feat: 일 수 출력기 추가">
+      <created>1650954154975</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650954154975</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +121,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feat: 캘린터 기본 틀 제작" />
     <MESSAGE value="Feat: 덧셈기 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: 덧셈기 추가" />
+    <MESSAGE value="Feat: 일 수 출력기 추가" />
+    <MESSAGE value="Feat: 반복입력 기능 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: 반복입력 기능 추가" />
   </component>
 </project>
