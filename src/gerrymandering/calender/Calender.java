@@ -5,6 +5,14 @@ import java.util.Scanner;
 public class Calender {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        DaysPrinter daysPrinter = new DaysPrinter();
+
+        System.out.print("달을 입력하시오 : ");
+        int month = sc.nextInt();
+
+        System.out.println(month + "월은 " + daysPrinter.printDays(month) + "일까지 있습니다.");
+
+/*        Scanner sc = new Scanner(System.in);
         Adder adder = new Adder();
 
         System.out.print("두 수를 입력하시오 : ");
@@ -12,7 +20,7 @@ public class Calender {
         int b = sc.nextInt();
 
         System.out.println("두 수의 합은 " + adder.sum(a, b) + "입니다.");
-        sc.close();
+        sc.close();*/
 
 /*        System.out.println("일  월  화  수  목  금  토\n" +
                 "--------------------\n" +
