@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a697b449-4e5d-41d2-9b1a-2ad33ae5b3be" name="Changes" comment="Feat: 캘린터 기본 틀 제작">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gerrymandering/calender/Calender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gerrymandering/calender/Calender.java" afterDir="false" />
-    </list>
+    <list default="true" id="a697b449-4e5d-41d2-9b1a-2ad33ae5b3be" name="Changes" comment="Feat: 덧셈기 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650950230665</updated>
-      <workItem from="1650950232011" duration="1411000" />
+      <workItem from="1650950232011" duration="1775000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: 캘린터 기본 틀 제작">
       <created>1650950611384</created>
@@ -79,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650950611384</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Feat: 덧셈기 추가">
+      <created>1650951962205</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650951962205</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feat: 캘린터 기본 틀 제작" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: 캘린터 기본 틀 제작" />
+    <MESSAGE value="Feat: 덧셈기 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: 덧셈기 추가" />
   </component>
 </project>
