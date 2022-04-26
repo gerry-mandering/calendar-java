@@ -7,18 +7,18 @@ public class Calender {
         Scanner sc = new Scanner(System.in);
         CalenderPrinter calenderPrinter = new CalenderPrinter();
 //        DaysPrinter daysPrinter = new DaysPrinter();
-        int month = 0;
+        int month, year = 0;
 
         while (true) {
-            System.out.print("달을 입력하시오 (종료는 -1) : ");
+            System.out.println("종료하려면 -1을 입력하시오.");
+            System.out.print("년도를 입력하시오 : ");
+            year = sc.nextInt();
+            if (detectMinusOne(year)) break;
+            System.out.print("달을 입력하시오 : ");
             month = sc.nextInt();
-            if (month == -1) {
-                System.out.println("프로그램을 종료합니다.");
-                break;
-            } else {
-                calenderPrinter.printCalender(month);
+            if (detectMinusOne(month)) break;
+            calenderPrinter.printCalender(year, month);
 //                System.out.println(month + "월은 " + daysPrinter.printDays(month) +"일까지 있습니다.");
-            }
         }
 
         sc.close();
@@ -41,5 +41,13 @@ public class Calender {
 
         System.out.println("두 수의 합은 " + adder.sum(a, b) + "입니다.");
         sc.close();*/
+    }
+
+    private static boolean detectMinusOne(int year) {
+        if (year == -1) {
+            System.out.println("프로그램을 종료합니다.");
+            return true;
+        }
+        return false;
     }
 }
