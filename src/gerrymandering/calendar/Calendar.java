@@ -1,11 +1,11 @@
-package gerrymandering.calender;
+package gerrymandering.calendar;
 
 import java.util.Scanner;
 
-public class Calender {
+public class Calendar {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        CalenderPrinter calenderPrinter = new CalenderPrinter();
+        CalendarPrinter calendarPrinter = new CalendarPrinter();
         int month, year = 0;
 
         while (true) {
@@ -18,7 +18,7 @@ public class Calender {
             month = sc.nextInt();
             if (detectMinusOne(month)) break;
 
-            calenderPrinter.printCalender(year, month);
+            calendarPrinter.printCalendar(year, month);
         }
         sc.close();
     }

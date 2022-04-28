@@ -1,20 +1,20 @@
-package gerrymandering.calender;
+package gerrymandering.calendar;
 
 import static java.lang.Math.*;
 
-public class CalenderPrinter {
-    // Zeller's congruence를 이용한 요일 찾기
+public class CalendarPrinter {
     static int getDay(int year, int month) {
-        int h = 0;                  // 요일(0~6 == 토~일)
-        int q = 1;                  // 일
-        double m = month;           // 월
-        double K = (int)year % 100; // 연도 마지막 두 자리 (2015 -> 15)
-        double J = (int)year / 100; // 세기
+        int h = 0, q = 1;               // h는 요일(0~6 == 토~일), q는 날짜
+        double m, K, J;                 // m은 월, K는 연도 마지막 두자리, J는 세기
 
-        if (m <= 2) {                   // 1월과 2월은 m에 12를 더해줌
-            m += 12;
-            K = (int)(year - 1) % 100;  // 연도는 1을 빼준값을 이용
+        if (month <= 2) {               // 1, 2월은 월에 12를 더하고 년도에 1을 빼서 계산
+            m = month + 12;
+            K = (int)(year - 1) % 100;
             J = (int)(year - 1) / 100;
+        } else {
+            m = month;
+            K = (int)year % 100;        // 연도 마지막 두자리
+            J = (int)year / 100;        // 세기
         }
 
         // Zeller's congruence
@@ -26,11 +26,11 @@ public class CalenderPrinter {
                 (int)(2 * J)
             ) % 7;
 
-        if (h < 0) {    // 나머지 값 결과가 음수일 경우 값을 보정
+        if (h < 0) {                    // 나머지 값 결과가 음수일 경우 값을 보정
             h += 7;
         }
 
-        System.out.println("h = " + h);
+//        System.out.println("h = " + h);
         return h;
     }
 
@@ -46,7 +46,7 @@ public class CalenderPrinter {
         }
     }
 
-    static int getEndDay(int year, int month) {
+    static int getEndDate(int year, int month) {
         if (isLeapYear(year) && month == 2) {
             return  29;
         } else {
@@ -65,9 +65,9 @@ public class CalenderPrinter {
         }
     }
 
-    void printCalender(int year, int month) {
+    void printCalendar(int year, int month) {
         int dayOfTheWeek = getDay(year, month);
-        int date = 1, skipper = 0, endDay = getEndDay(year, month);
+        int date = 1, skipper = 0, endDay = getEndDate(year, month);
 
         if (dayOfTheWeek == 0) {
             skipper = 6;
